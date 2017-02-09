@@ -1,0 +1,8 @@
+<h1>This index page !</h1>
+<div class="post_wrapper">
+  <%@posts.each do |post|%>
+    <h2 class="title"><%=link_to post.title, post%></h2>
+    <p class="date" ><%=post.created_at.strftime("%B %d %Y")%></p>
+    <p class="body" ><%=post.title%></p>
+  <%end%>
+</div>
